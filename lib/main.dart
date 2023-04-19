@@ -35,7 +35,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   int leftDice = 0;
   List<String> menuList = [
     "플러터",
@@ -49,7 +48,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
       leftDice = Random().nextInt(menuList.length);
       menuName = menuList[leftDice];
 
